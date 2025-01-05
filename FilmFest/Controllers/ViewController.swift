@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  FilmFest
 //
-//  Created by Author on 1/15/18.
-//  Copyright © 2018 Author. All rights reserved.
+//  Created by Andres Sanchez on 04/01/2025.
+//  Copyright © 2025 Author. All rights reserved.
 //
 
 import UIKit

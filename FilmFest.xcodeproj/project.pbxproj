@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23B142262D2A17AF00449A81 /* MovieManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B142252D2A17A600449A81 /* MovieManagerTests.swift */; };
+		8F0466C8200D201F00EDA326 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0466C7200D201F00EDA326 /* Movie.swift */; };
 		8FD54624200D1A960046A5C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD54623200D1A960046A5C4 /* AppDelegate.swift */; };
 		8FD54626200D1A960046A5C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD54625200D1A960046A5C4 /* ViewController.swift */; };
 		8FD54629200D1A960046A5C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD54627200D1A960046A5C4 /* Main.storyboard */; };
 		8FD5462B200D1A960046A5C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD5462A200D1A960046A5C4 /* Assets.xcassets */; };
 		8FD5462E200D1A960046A5C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD5462C200D1A960046A5C4 /* LaunchScreen.storyboard */; };
-		8FD54639200D1A960046A5C4 /* FilmFestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD54638200D1A960046A5C4 /* FilmFestTests.swift */; };
+		8FD54644200D1C920046A5C4 /* MovieStructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD54643200D1C920046A5C4 /* MovieStructTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23B142252D2A17A600449A81 /* MovieManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManagerTests.swift; sourceTree = "<group>"; };
+		8F0466C7200D201F00EDA326 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		8FD54620200D1A960046A5C4 /* FilmFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD54623200D1A960046A5C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FD54625200D1A960046A5C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +38,8 @@
 		8FD5462D200D1A960046A5C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FD5462F200D1A960046A5C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FD54634200D1A960046A5C4 /* FilmFestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmFestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FD54638200D1A960046A5C4 /* FilmFestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFestTests.swift; sourceTree = "<group>"; };
 		8FD5463A200D1A960046A5C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD54643200D1C920046A5C4 /* MovieStructTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStructTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FC230B7200D25F200B26A98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F0466C7200D201F00EDA326 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8FC230B8200D25F900B26A98 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8FD54625200D1A960046A5C4 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8FC230B9200D260600B26A98 /* Test Models */ = {
+			isa = PBXGroup;
+			children = (
+				8FD54643200D1C920046A5C4 /* MovieStructTests.swift */,
+			);
+			path = "Test Models";
+			sourceTree = "<group>";
+		};
+		8FC230BA200D260D00B26A98 /* Test Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				23B142252D2A17A600449A81 /* MovieManagerTests.swift */,
+			);
+			path = "Test Controllers";
+			sourceTree = "<group>";
+		};
 		8FD54617200D1A960046A5C4 = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +113,9 @@
 		8FD54622200D1A960046A5C4 /* FilmFest */ = {
 			isa = PBXGroup;
 			children = (
+				8FC230B8200D25F900B26A98 /* Controllers */,
+				8FC230B7200D25F200B26A98 /* Models */,
 				8FD54623200D1A960046A5C4 /* AppDelegate.swift */,
-				8FD54625200D1A960046A5C4 /* ViewController.swift */,
 				8FD54627200D1A960046A5C4 /* Main.storyboard */,
 				8FD5462A200D1A960046A5C4 /* Assets.xcassets */,
 				8FD5462C200D1A960046A5C4 /* LaunchScreen.storyboard */,
@@ -90,7 +127,8 @@
 		8FD54637200D1A960046A5C4 /* FilmFestTests */ = {
 			isa = PBXGroup;
 			children = (
-				8FD54638200D1A960046A5C4 /* FilmFestTests.swift */,
+				8FC230BA200D260D00B26A98 /* Test Controllers */,
+				8FC230B9200D260600B26A98 /* Test Models */,
 				8FD5463A200D1A960046A5C4 /* Info.plist */,
 			);
 			path = FilmFestTests;
@@ -140,8 +178,9 @@
 		8FD54618200D1A960046A5C4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = Author;
 				TargetAttributes = {
 					8FD5461F200D1A960046A5C4 = {
@@ -150,6 +189,7 @@
 					};
 					8FD54633200D1A960046A5C4 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 8FD5461F200D1A960046A5C4;
 					};
@@ -201,6 +241,7 @@
 			files = (
 				8FD54626200D1A960046A5C4 /* ViewController.swift in Sources */,
 				8FD54624200D1A960046A5C4 /* AppDelegate.swift in Sources */,
+				8F0466C8200D201F00EDA326 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FD54639200D1A960046A5C4 /* FilmFestTests.swift in Sources */,
+				23B142262D2A17AF00449A81 /* MovieManagerTests.swift in Sources */,
+				8FD54644200D1C920046A5C4 /* MovieStructTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +298,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -263,8 +306,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -276,6 +321,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -290,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -313,6 +359,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -320,8 +367,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -333,6 +382,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -341,10 +391,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -354,10 +405,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7864Y9RXSY;
+				DEVELOPMENT_TEAM = YLLF7E9854;
 				INFOPLIST_FILE = FilmFest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HarrisonFerrone.FilmFest;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andsangue.filmfest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -369,10 +423,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7864Y9RXSY;
+				DEVELOPMENT_TEAM = YLLF7E9854;
 				INFOPLIST_FILE = FilmFest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HarrisonFerrone.FilmFest;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andsangue.filmfest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,14 +439,19 @@
 		8FD54641200D1A960046A5C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7864Y9RXSY;
+				DEVELOPMENT_TEAM = YLLF7E9854;
 				INFOPLIST_FILE = FilmFestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HarrisonFerrone.FilmFestTests;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andsangue.filmfesttests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilmFest.app/FilmFest";
@@ -399,13 +461,17 @@
 		8FD54642200D1A960046A5C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7864Y9RXSY;
+				DEVELOPMENT_TEAM = YLLF7E9854;
 				INFOPLIST_FILE = FilmFestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HarrisonFerrone.FilmFestTests;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andsangue.filmfesttests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
