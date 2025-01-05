@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23B142262D2A17AF00449A81 /* MovieManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B142252D2A17A600449A81 /* MovieManagerTests.swift */; };
+		23B142282D2A1B4100449A81 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B142272D2A1B3E00449A81 /* MovieManager.swift */; };
 		8F0466C8200D201F00EDA326 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0466C7200D201F00EDA326 /* Movie.swift */; };
 		8FD54624200D1A960046A5C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD54623200D1A960046A5C4 /* AppDelegate.swift */; };
 		8FD54626200D1A960046A5C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD54625200D1A960046A5C4 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		23B142252D2A17A600449A81 /* MovieManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManagerTests.swift; sourceTree = "<group>"; };
+		23B142272D2A1B3E00449A81 /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 		8F0466C7200D201F00EDA326 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		8FD54620200D1A960046A5C4 /* FilmFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD54623200D1A960046A5C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		8FC230B8200D25F900B26A98 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				23B142272D2A1B3E00449A81 /* MovieManager.swift */,
 				8FD54625200D1A960046A5C4 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B142282D2A1B4100449A81 /* MovieManager.swift in Sources */,
 				8FD54626200D1A960046A5C4 /* ViewController.swift in Sources */,
 				8FD54624200D1A960046A5C4 /* AppDelegate.swift in Sources */,
 				8F0466C8200D201F00EDA326 /* Movie.swift in Sources */,
