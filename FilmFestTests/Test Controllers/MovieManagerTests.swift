@@ -12,6 +12,11 @@ import XCTest
 
 class MovieManagerTests: XCTestCase {
     var sut: MovieManager!
+    
+    let sciFiMovie = Movie(title: "SciFi")
+    let artHouseMovie = Movie(title: "Art House Drama")
+    let actionMovie = Movie(title: "Action")
+    
     override func setUp(){
         super.setUp()
         sut = MovieManager()
@@ -38,18 +43,40 @@ class MovieManagerTests: XCTestCase {
     //increase the count each time
     
     func testAdd_MoviesToSee_ReturnsOne(){
-        let testMovie = Movie(title: "Sci-Fi")
-        sut.addMovie(movie: testMovie)
+        sut.addMovie(movie: sciFiMovie)
         // one after add the movie to the library
         XCTAssertEqual(sut.moviesToSeeCount, 1)
     }
     
     func testQuery_ReturnMovieAtIndex(){
-        let testMovie = Movie(title: "Arthouse Drama")
-        sut.addMovie(movie: testMovie)
+        sut.addMovie(movie: artHouseMovie)
         
         let movieQueried = sut.movieAtIndex(index: 0 )
-        XCTAssertEqual(testMovie.title, movieQueried.title)
+        XCTAssertEqual(artHouseMovie.title, movieQueried.title)
+    }
+    
+    //MARK: checking off
+    // check a movie as seen
+    func testCheckOffMovie_UpdateMovieManagerCounts(){
+        sut.addMovie(movie: actionMovie)
+        sut.checkOffMovieAtIndex(index: 0)
+        XCTAssertEqual(sut.moviesToSeeCount, 0)
+        XCTAssertEqual(sut.moviesSeenCount, 1)
+    }
+    func testCheckOffMovie_RemoveMovieFromArray(){
+        sut.addMovie(movie: sciFiMovie)
+        sut.addMovie(movie: artHouseMovie)
+        sut.checkOffMovieAtIndex(index: 0)
+        
+        XCTAssertEqual(sut.movieAtIndex(index: 0).title, artHouseMovie.title)
+    }
+    func testCheckOffMovie_ReturnMovieAtIndex(){
+        sut.addMovie(movie: sciFiMovie)
+        sut.checkOffMovieAtIndex(index: 0)
+        
+        let movieQueried = sut.checkedOffMovieAtIndex(index: 0)
+        
+        XCTAssertEqual(sciFiMovie.title, movieQueried.title)
     }
     
 }
