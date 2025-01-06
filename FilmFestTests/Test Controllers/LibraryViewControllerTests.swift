@@ -2,8 +2,8 @@
 //  LibraryViewControllerTests.swift
 //  FilmFestTests
 //
-//  Created by Author on 1/18/18.
-//  Copyright © 2018 Author. All rights reserved.
+//  Created by Andres Sanchez on 05/01/2025.
+//  Copyright © 2025 Author. All rights reserved.
 //
 
 import XCTest
@@ -30,8 +30,21 @@ class LibraryViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.libraryTableView)
     }
     
+    // MARK: Data Source
+    func testDataSource_ViewDidLoad_SetsTableViewDataSource() {
+        XCTAssertNotNil(sut.libraryTableView.dataSource)
+        XCTAssertTrue(sut.libraryTableView.dataSource is MovieLibraryDataService)
+    }
     
+    // MARK: Delegate
+    func testDelegate_ViewDidLoad_SetsTableViewDelegate() {
+        XCTAssertNotNil(sut.libraryTableView.delegate)
+        XCTAssertTrue(sut.libraryTableView.delegate is MovieLibraryDataService)
+    }
     
-    
+    // MARK: Data Service Assumptions
+    func testDataService_ViewDidLoad_SingleDataServiceObject() {
+        XCTAssertEqual(sut.libraryTableView.dataSource as! MovieLibraryDataService, sut.libraryTableView.delegate as! MovieLibraryDataService)
+    }
     
 }

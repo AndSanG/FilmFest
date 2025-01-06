@@ -51,10 +51,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dataService" destination="4yN-Ye-GDe" id="UXT-MY-0Hs"/>
                         <outlet property="libraryTableView" destination="lTl-Yz-ar4" id="3ay-tN-21D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="4yN-Ye-GDe" customClass="MovieLibraryDataService" customModule="FilmFest" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
